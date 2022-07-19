@@ -19,7 +19,7 @@ main{
 /* all styles starts from here */
 
 .haad-banner{
-    margin-top: 60px;
+    margin: 90px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-radius: 50px;
@@ -48,6 +48,209 @@ main{
     padding: 6px;
     border-radius: 5px;
 }
+
+/* banner part end */
+/* middle navigations and news part start  */
+.middle{
+    display: flex;
+    margin: 90px;
+}
+
+.navigations{
+    margin: 0px 20px 20px 20px;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.navigations a{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+}
+.navigations .active{
+    background-color: #DD0000;
+    color: white;
+}
+
+/* navigagion end news part start  */
+
+
+.all-news{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.all-news .news .news-info{
+    padding: 10px;
+}
+.all-news .news .news-info a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 576px) {
     .haad-banner{
