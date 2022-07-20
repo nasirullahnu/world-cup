@@ -40,14 +40,13 @@ main{
     background-color: #DD0000;
     padding: 6px;
     border-radius: 5px;
-    transition: 0.5s;
+    animation: animation 0.5s ease 0.5s infinite alternate;
 }
-.banner-infos a:hover{
-    background-color: red;
-}
+
 
 /* banner part end */
 /* middle navigations and news part start  */
+
 .middle{
     display: flex;
     margin: 90px;
@@ -85,7 +84,8 @@ main{
     color: white;
 }
 
-/* navigagion end news part start  */
+/* navigagion end 
+news part start  */
 
 
 .all-news{
@@ -159,9 +159,10 @@ footer a{
     color: white;
     margin-right: 30px;
 }
-
-
-/* .view{
+.social-icons a{
+    font-size: 30px;
+}
+.view-button{
     text-decoration: none;
     background-color: #DD0000;
     color: white;
@@ -169,12 +170,15 @@ footer a{
     padding: 10px;
     width: 100px;
     border-radius: 5px;
-    position: relative;
     margin-bottom: 100px;
-    margin-left: 750px;
+    visibility: hidden;
+}
 
-} */
 
+
+/*-------------------------
+ upcoming match page styles  
+ --------------------------*/
 
 
 .second-page{
@@ -186,160 +190,16 @@ footer a{
 }
 .second-page .second-page-info{
     text-align: center;
-
 }
 .all-news .news .second-page-info{
     text-align: center;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*------------------------------
+ responsive styles 
+-------------------------- */
+/* mobile devices  */
 
 @media only screen and (max-width: 576px) {
     .haad-banner{
@@ -360,8 +220,22 @@ footer a{
     .hrline a{
         margin-top: 15px;
     }
+    .elliplse{
+        width: 300px;
+    }
+    .mobile-ellipse{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .view-button{
+        visibility: hidden;
+    }
 }
 
+/*------------------
+ tablet devices 
+------------------ */
 
 @media only screen and (min-width: 577px) and (max-width: 950px) {
     .middle{
@@ -378,5 +252,19 @@ footer a{
     }
     .navigations a{
         border: 1px solid black;
+    }
+    .view-button{
+        visibility: visible;
+    }
+}
+
+/* head button animation */
+
+@keyframes animation {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: blue;
     }
 }
