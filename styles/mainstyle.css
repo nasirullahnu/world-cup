@@ -59,7 +59,8 @@ main{
     height: 200px;
     background-color: black;
     border-radius: 10px;
-    padding-top: 35px;
+    /* padding-top: 35px; */
+    padding: 35px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,14 +374,9 @@ footer a{
         flex-direction: row;
         height: 100px;
         width: 100%;
+        background-color: transparent;
     }
-    .tablet-color{
-        background-color: white;
-    }
-    .tablet-color a{
+    .navigations a{
         border: 1px solid black;
     }
-    /* .navigations a{
-        padding-top: 0px;
-    } */
 }
