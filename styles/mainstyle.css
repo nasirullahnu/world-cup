@@ -373,9 +373,15 @@ footer a{
         flex-direction: row;
         height: 100px;
         width: 100%;
+        background-color: none;
     }
-    .navigations a{
+    .tablet-color{
+        background-color: white;
+    }
+    .tablet-color a{
+        border: 1px solid black;
+    }
+    /* .navigations a{
         padding-top: 0px;
-
-    }
+    } */
 }
